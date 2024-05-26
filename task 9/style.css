@@ -1,0 +1,196 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100vw;
+    height: 100vh;
+}
+
+nav{
+    padding: 15px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}  
+.menu a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-family: calibri;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
+nav > button{
+    color: #09A9FF;
+    background-color: rgb(176, 224, 248);
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+main{
+    height: 80%;
+    display: flex;
+    align-items: center;
+    padding: 100px;
+    gap: 20px;
+}
+main div{
+    width: 50%;
+}
+.heading , .heading-blue{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 52px;
+}
+.heading-blue{
+    color: #09A9FF;
+    margin: 10px 0px;
+}
+
+.left p{
+    color: gray;
+    margin: 10px 0px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.right img{
+    scale: 80%;
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+    
+    animation: circle 2.5s ease-in-out infinite;
+}
+
+@keyframes circle {
+    0% {
+        transform: rotate(0deg) translate(50px) rotate(0deg);
+    } 
+    25%{
+        transform: rotate(90deg) translate(50px) rotate(-90deg)  scaleY(110%)  ;
+        
+    }
+    50%{
+        transform: rotate(180deg) translate(50px) rotate(-180deg) ;
+    }
+    75%{
+        transform: rotate(270deg) translate(50px) rotate(-270deg) scaleX(110%);
+    }
+    100% {
+        transform: rotate(360deg) translate(50px) rotate(-360deg) ;
+    }
+}
+
+.left button{
+    font-weight: bold;
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    margin-top: 15px;
+    background-color: #09A9FF;
+    cursor: pointer;
+}
+
+
+.book-button:hover{
+    transform: rotate(-5deg) scale(1.2);
+    transition: all 0.5s ease;
+}
+
+
+@media screen and (max-width: 1490px) {
+    nav{
+        margin-bottom: 100px;
+    }
+}
+
+    
+@media screen and (max-width: 770px) {
+    nav{
+        margin-bottom: 20px;
+    }
+    .menu-items {
+        font-size: 10px;
+    }       
+    .left h1{
+        font-size: 24px;
+    }
+    .left p{
+        font-size: 10px;
+    }
+    .left button {
+        font-size: 10px;
+    }
+}
+
+
+@media screen and (max-width: 426px) {
+    nav{
+        margin-bottom: 10px;
+        padding: 15px;
+        /* background-color: blue; */
+    }
+    .menu{
+        display: none;
+    }
+    main{
+        flex-direction: column;
+        align-items: start ;
+        padding: 10px;
+        padding-right: 20px;
+    }
+    .left h1{
+        width: 100vw;
+        font-size: 31px;
+        margin-top: 10px;
+        /* border: 1px solid blue; */
+    } 
+    .left p{
+        font-size: 16px;
+        width: 100vw;
+        padding-right: 20px;
+    }
+
+    
+    .left-button{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        /* margin: auto; */
+    }
+
+    .left-button button{
+        font-size: 14px;
+        padding: 20px;
+    }  
+
+    .right img{
+        object-fit: contain;
+        width: 200%;
+        height: 100%; 
+        margin: 0px;
+        padding: 0px;
+    }
+    
+}
