@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100vw;
+    height: 100vh;
+    font-family: "Poppins" , Verdana, Geneva, Tahoma, sans-serif;
+    overflow-x: hidden;
+}
+
+
+header{
+    height: 10vh;
+    border-bottom: 2px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 5vw;
+}
+header h1{
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.81);
+    
+}
+header button{
+    padding: 15px 40px;
+    border-radius: 25px;
+    border: none;
+    background-color: rgba(143, 217, 247, 0.758);
+    color: dodgerblue;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.search-section{
+    display: flex;
+    align-items: center;
+    padding: 2vw 5vw;
+    gap: 20px;
+}
+.search-section button{
+    font-size: 18px;
+    padding: 10px 25px;
+    border-radius: 12px;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: 400;
+}
+.input-div{
+    border: 1px solid gray;
+    padding: 0px 20px;
+    border-radius: 20px;
+}
+.input-div input{
+    font-size: 18px;
+    padding: 10px 0px;
+    border: none;
+}
+input:focus{
+    outline: none;
+    border: none;
+}
+
+.student-cards{
+    padding: 0vw 5vw;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content:start;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.student{
+    border: 1px solid gray;
+    background-color: #fafafa;
+    border-radius: 10px;
+    padding: 20px 10px;
+    
+    width: 32%;
+}
