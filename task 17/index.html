@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 17</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+
+    <nav>
+        <div class="logo">Logo</div>
+        <ul>
+            <li>Home</li>
+            <li>Services</li>
+            <li>About Us </li>
+            <li>Contact Us</li>
+        </ul>
+        <div class="user-login">
+            <span class="username-btn">Username</span>
+            <span class="exit-btn"><i class="fa-solid fa-arrow-right-from-bracket "></i></span>
+        </div>
+    </nav>
+
+    <main>
+        <div class="left">
+            <div class="left-top">
+                <h4>Added Items</h4>
+                <table>
+                    <thead>
+                        <tr class="head-row">
+                            <th>S.No</th>
+                            <th class="service-col">Service Name</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbody">
+                        <!-- <tr>
+                            <td class="data-sno">1.</td>
+                            <td class="data-name">Dry Cleaning</td>
+                            <td class="data-price"> &#x20B9; 200.00 </td>
+                        </tr> -->
+                    </tbody>
+                </table>
+                <div id="noitemdiv">
+                    <i class="fa-solid fa-circle-exclamation exclamation"></i>
+                    <h6>No Items Added</h6>
+                    <p>Add items to the cart from the service bar</p>
+                </div>
+
+                <div class="tadiv">
+                    <h4>Total Amount</h4>
+                    <p>&#x20B9; <span id="total-amount">0</span> </p>
+                </div>
+
+
+            </div>
+
+            <div class="left-bottom">
+                <h4>Book Now</h4>
+                <form>
+                    <div class="fullname-div">
+                        <label for="fullname">Full Name</label>
+                        <input type="text" id="fullname" placeholder="John Doe">
+                    </div>
+                    <div class="parent">
+                        <div class="email-div">
+                            <label for="mail">Email </label>
+                            <input type="email" id="mail" placeholder="mailid@gmail.com">
+                        </div>
+                        <div class="phone-div">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" placeholder="0000000000">
+                        </div>
+                    </div>
+                    <div class="mb-10">
+                        <button id="book-btn" >Book now</button>
+                        <span class="btn-error">  <i class="fa-solid fa-circle-exclamation"></i> Add the items to the cart to book </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="browse-div">
+                <h1>Browse Our Services</h1>
+                <h6>Click on the add to cart button to add the services to your cart or press skip</h6>
+            </div>
+            <div class="inner-right">
+                <img src="https://plus.unsplash.com/premium_photo-1682129246512-3a7e974ff85e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="inner-right-img">
+                <div class="inner-right-div1">
+                    <h2 id="service-name">Dry Cleaning</h2>
+                    <p >&#x20B9; <span id="service-price">200</span>.00</p>
+                </div>
+                <div class="inner-right-btndiv">
+                    <button class="skip-btn">Skip Item <i class="fa-solid fa-circle-minus"></i> </button>
+                    <button class="add-btn">Add Item <i class="fa-solid fa-circle-plus"></i> </button>
+                </div>
+            </div>
+            <div class="bottom-right">
+                <p> <i class="fa-solid fa-circle-exclamation exclamation"></i> Add the items to the cart and book now</p>
+            </div>
+        </div>
+
+    </main>
+
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
