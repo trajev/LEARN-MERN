@@ -16,75 +16,81 @@ Q7 - Define a nested object representing a person with properties like name, add
 
 */
 
-let arr = [1,2,3,4,5];
-let result = arr.map( val => val*val );
-console.log( result );
+//Question - 1 
+// let arr = [1,2,3,4,5];
+// let result = arr.map( val => val*val );
+// console.log( result );
+
+
+
+
+// Question - 2 
+// let Func = score => {
+//     return ( score>=90 ? 'A' : ( score>=80 ? 'B' : ( score>=70 ? 'C' : ( score>=60 ? 'D' : 'F' ) ) ) )
+// }
+// console.log( "Grade : " + Func( 89 ) );
+
+
+
+
+// Question - 3
+// let obj = {
+//     companyName : "MG",
+//     model : "HECTOR",
+//     year: "2021"
+// }
+
+// let changeYear = newYear => {
+//     obj.year = newYear;
+// }
+
+// changeYear( 2026 );
+
+// let year = obj.year;
+// let model = obj.model;
+// console.log("Car year :" + year + " Car model : " + model )
 
 
 
 
 
-let Func = score => {
-    return ( score>=90 ? 'A' : ( score>=80 ? 'B' : ( score>=70 ? 'C' : ( score>=60 ? 'D' : 'F' ) ) ) )
-}
-console.log( "Grade : " + Func( 89 ) );
 
 
+// Question - 4
+// isPrime = n => {
+//     if( n<=1 ){
+//         return false;
+//     }
+//     for(let i=2; i*i<=n; i++){
+//         if( n%i==0 ){
+//             return false;
+//         }
+//     }
+//     return true;
+// }
+
+// let intArr = [1,2,3,4,5,6,7,8,9];
+// let res = intArr.filter( (val)=>{
+//     return isPrime(val);
+// } )
+// console.log( res );
 
 
+// Question - 5
+// console.log("use cases of map, reduce and filter: searching, filter array based on condition, perform mathematical operations using reduce, find max value and min value of items, sort items to ascending or descending order,");
 
 
+// Question -6
+// let getDetails = async () => {
+//     await fetch('https://jsonplaceholder.typicode.com/users')
+//       .then(response => response.json())
+//       .then(json => console.log(json))
+// }
 
-let obj = {
-    companyName : "MG",
-    model : "HECTOR",
-    year: "2021"
-}
+// let api = getDetails();
+// console.log( api )
 
-let changeYear = newYear => {
-    obj.year = newYear;
-}
-
-changeYear( 2026 );
-
-let year = obj.year;
-let model = obj.model;
-console.log("Car year :" + year + " Car model : " + model )
-
-
-
-isPrime = n => {
-    if( n<=1 ){
-        return false;
-    }
-    for(let i=2; i*i<=n; i++){
-        if( n%i==0 ){
-            return false;
-        }
-    }
-    return true;
-}
-
-let intArr = [1,2,3,4,5,6,7,8,9];
-let res = intArr.filter( (val)=>{
-    return isPrime(val);
-} )
-console.log( res );
-
-
-console.log("use cases of map, reduce and filter: searching, filter array based on condition, perform mathematical operations using reduce, find max value and min value of items, sort items to ascending or descending order,");
-
-
-let getDetails = async () => {
-    await fetch('https://jsonplaceholder.typicode.com/users')
-      .then(response => response.json())
-      .then(json => console.log(json))
-}
-
-let api = getDetails();
-console.log( api )
-
-
+// Question - 7
 let personDetails = {
     personNo: 1,
     properties : {
